@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Алиса · UI/UX & Product Designer</title>
     
+    <!-- Фавиконка: чёрное сердечко -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231B1B1B' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+    
     <!-- Подключение шрифта Golos Text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +25,9 @@
             font-family: 'Golos Text', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         html {
@@ -31,6 +37,18 @@
         a {
             text-decoration: none;
             display: inline-block;
+        }
+        
+        .main-container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding-bottom: 24px;
+            padding-left: 24px;
+            padding-right: 24px;
+            background: #EEEEED;
+            overflow: hidden;
+            display: block;
         }
         
         /* Ховеры для кнопок */
@@ -67,28 +85,19 @@
         .nav-tab.active div {
             font-weight: 500;
         }
-        
-        /* Плавное появление */
-        .fade-in {
-            animation: fadeIn 0.5s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
 
 <!-- Основной контейнер -->
-<div style="width: 100%; max-width: 1440px; margin: 0 auto; padding-bottom: 24px; padding-left: 24px; padding-right: 24px; background: #EEEEED; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+<div class="main-container">
     
-    <!-- ==================== HERO БЛОК ==================== -->
-    <div id="hero" style="align-self: stretch; height: 750px; padding-left: 96px; padding-right: 96px; position: relative; background: #F2F2F2; justify-content: flex-end; align-items: center; display: inline-flex">
+    <!-- ==================== HERO БЛОК (без фона) ==================== -->
+    <div id="hero" style="align-self: stretch; min-height: 750px; padding-left: 96px; padding-right: 96px; position: relative; justify-content: flex-end; align-items: center; display: flex; flex-wrap: wrap;">
         <div style="width: 655px; height: 691px; left: 0px; top: 0px; position: absolute">
             <img style="width: 531.34px; height: 603px; left: 124px; top: 88px; position: absolute; border-radius: 16px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1экранмоёлицо.png" alt="Алиса" />
         </div>
-        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex; margin-left: auto;">
             <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
                 <div style="padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #B7FA44; border-radius: 100px; justify-content: center; align-items: center; gap: 10px; display: flex">
                     <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">алиса</div>
@@ -527,14 +536,14 @@
         
         <img style="align-self: stretch; height: 470px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс1картинка.png" alt="Яндекс HR" />
         
-        <div style="align-self: stretch; height: 436px; position: relative; justify-content: flex-end; align-items: center; gap: 24px; display: inline-flex">
-            <div style="flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; display: inline-flex">
-                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-                    <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
+        <div style="align-self: stretch; min-height: 436px; position: relative; justify-content: flex-end; align-items: center; gap: 24px; display: flex; flex-wrap: wrap;">
+            <div style="flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; display: flex; flex: 1;">
+                <div style="width: 100%; max-width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 100%; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
                     <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">задачи разного объёма и сложности — от шаблонных лендингов и email рассылок до креативных спецпроектов и новых разделов. Важно было не просто сделать, а сделать быстро, качественно без потери единого стиля</div>
                 </div>
-                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
-                    <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
+                <div style="width: 100%; max-width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 100%; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
                     <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
                         <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
                             <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
@@ -557,12 +566,12 @@
                     </div>
                 </div>
             </div>
-            <div style="width: 639px; height: 574.66px; left: -39px; top: -71.44px; position: absolute">
-                <img style="width: 639px; height: 574px; left: 0px; top: 35.98px; position: absolute" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс2картинка.png" alt="Декор" />
+            <div style="width: 639px; height: 574px; position: relative;">
+                <img style="width: 100%; height: 100%; object-fit: contain;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс2картинка.png" alt="Декор" />
             </div>
         </div>
         
-        <img style="align-self: stretch; height: 259px; position: relative" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинканастоящая.png" alt="Примеры задач" />
+        <img style="align-self: stretch; height: auto; max-width: 100%;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинканастоящая.png" alt="Примеры задач" />
         
         <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
             <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
@@ -601,7 +610,7 @@
                 </div>
             </div>
         </div>
-        <img style="width: 1200px; height: 500px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинка.png" alt="Дополнительные материалы" />
+        <img style="width: 100%; max-width: 1200px; height: auto;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинка.png" alt="Дополнительные материалы" />
     </div>
 
     <!-- ==================== ПРОЕКТ 5: СПОРТИВНОЕ ПРИЛОЖЕНИЕ ==================== -->
@@ -819,7 +828,6 @@
 (function() {
     'use strict';
     
-    // Получаем все секции и табы
     const sections = [
         { id: 'hero', tab: document.querySelector('[data-section="hero"]') },
         { id: 'promo', tab: document.querySelector('[data-section="promo"]') },
@@ -828,9 +836,8 @@
         { id: 'hr', tab: document.querySelector('[data-section="hr"]') },
         { id: 'sport', tab: document.querySelector('[data-section="sport"]') },
         { id: 'hobby', tab: document.querySelector('[data-section="hobby"]') }
-    ].filter(s => s.tab !== null); // Фильтруем на случай, если таб не найден
+    ].filter(s => s.tab !== null);
     
-    // Функция для удаления активного класса со всех табов
     function removeActiveClasses() {
         sections.forEach(section => {
             if (section.tab) {
@@ -839,13 +846,11 @@
         });
     }
     
-    // Функция для определения видимой секции
     function updateActiveTab() {
-        const scrollPosition = window.scrollY + 200; // Небольшой оффсет для точности
+        const scrollPosition = window.scrollY + 200;
         
         let activeSection = null;
         
-        // Ищем секцию, которая сейчас видна
         for (let i = sections.length - 1; i >= 0; i--) {
             const section = sections[i];
             const element = document.getElementById(section.id);
@@ -861,7 +866,6 @@
             }
         }
         
-        // Если нашли активную секцию — подсвечиваем её таб
         if (activeSection) {
             removeActiveClasses();
             if (activeSection.tab) {
@@ -870,7 +874,6 @@
         }
     }
     
-    // Обработчик скролла с троттлингом
     let ticking = false;
     window.addEventListener('scroll', function() {
         if (!ticking) {
@@ -882,10 +885,8 @@
         }
     });
     
-    // Запускаем при загрузке
     updateActiveTab();
     
-    // Добавляем плавный скролл при клике на таб
     sections.forEach(section => {
         if (section.tab) {
             section.tab.addEventListener('click', function(e) {
