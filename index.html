@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Алиса · UI/UX & Product Designer</title>
+    
+    <!-- Подключение шрифта Golos Text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #EEEEED;
+            font-family: 'Golos Text', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        /* Ховеры для кнопок */
+        .cta-button-tg {
+            transition: all 0.3s ease;
+        }
+        .cta-button-tg:hover {
+            background: #FFD700 !important;
+            transform: scale(1.05);
+        }
+        
+        .cta-button-hh {
+            transition: all 0.3s ease;
+        }
+        .cta-button-hh:hover {
+            background: #9FE82C !important;
+            transform: scale(1.05);
+        }
+        
+        /* Ховеры для табов */
+        .nav-tab {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-tab:hover {
+            opacity: 0.7;
+        }
+        
+        /* Активный таб */
+        .nav-tab.active {
+            background: #F3CA41 !important;
+            border-radius: 100px;
+        }
+        .nav-tab.active div {
+            font-weight: 500;
+        }
+        
+        /* Плавное появление */
+        .fade-in {
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Основной контейнер -->
+<div style="width: 100%; max-width: 1440px; margin: 0 auto; padding-bottom: 24px; padding-left: 24px; padding-right: 24px; background: #EEEEED; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+    
+    <!-- ==================== HERO БЛОК ==================== -->
+    <div id="hero" style="align-self: stretch; height: 750px; padding-left: 96px; padding-right: 96px; position: relative; background: #F2F2F2; justify-content: flex-end; align-items: center; display: inline-flex">
+        <div style="width: 655px; height: 691px; left: 0px; top: 0px; position: absolute">
+            <img style="width: 531.34px; height: 603px; left: 124px; top: 88px; position: absolute; border-radius: 16px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1экранмоёлицо.png" alt="Алиса" />
+        </div>
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+            <div style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                <div style="padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #B7FA44; border-radius: 100px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                    <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">алиса</div>
+                </div>
+                <div style="padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #E5B4FA; border-radius: 100px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                    <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">uix & product designer</div>
+                </div>
+            </div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch"><span style="color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px; word-wrap: break-word">проектировала интерфейсы, внутренние сервисы и спецпроекты </span><span style="color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 700; line-height: 22px; word-wrap: break-word">для крупнейших компаний россии</span><span style="color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px; word-wrap: break-word"> — от лидеров рынка взыскания до яндекса. работала в составе агентства div, где научилась балансировать между креативом и системностью</span></div>
+                <div style="align-self: stretch; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px; word-wrap: break-word">системность и автоматизация — мой каркас. я строю <br/>дизайн-системы, компоненты и ui-киты, которые ускоряют разработку и не разваливаются на следующих экранах</div>
+                <div style="align-self: stretch; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px; word-wrap: break-word">креатив и нестандартные решения — моя страсть. я люблю геймификацию, игровые механики и неочевидные подходы, которые вовлекают пользователя.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ПРОЕКТ 1: ПРОМО ПОИСКА ==================== -->
+    <div id="promo" style="align-self: stretch; padding: 96px; background: #1B1B1B; box-shadow: 0px 0px 25px rgba(34.08, 29.38, 23.63, 0.10); overflow: hidden; border-radius: 160px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #E5B4FA; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                    <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">1</div>
+                </div>
+                <div style="width: 325px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Промо-проект для Поиска<br/>«Угадайте цену квартиры»</div>
+            </div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">роль:</div>
+                    <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Ведущий дизайнер интерфейса</div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">команда:</div>
+                    <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Я в составе команды UI/UX, проджект-менеджер,<br/>команда графического дизайна, команда разработки</div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">сроки:</div>
+                    <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">3 месяца</div>
+                </div>
+            </div>
+        </div>
+        <img style="width: 1200px; height: 683px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1кейс1картинка.png" alt="Промо Поиска" />
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+            <div style="align-self: stretch; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">В рамках запуска нового раздела «Квартиры» было важно не просто рассказать о продукте, а дать пользователям возможность попробовать его в действии</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                    <div style="width: 629px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Главные вызовы:</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Сделать механику, которая вовлекает, но не перегружает.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Адаптировать под мобильные устройства — 80% трафика заходит с телефона.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Встроить игру в экосистему Поиска (точки входа, возвраты, прогресс).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img style="width: 1238px; height: 374px; padding: 40px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1кейс2картинканастоящая.png" alt="Схема механики" />
+        <div style="align-self: stretch; justify-content: center; align-items: center; gap: 40px; display: inline-flex">
+            <img style="width: 560px; height: 457px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1кейс2картинка.png" alt="Интерфейс игры" />
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                        <div style="width: 629px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Продумала полный цикл:</div>
+                        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                                <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                    <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                                </div>
+                                <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Точки входа из поисковика</div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                                <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                    <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                                </div>
+                                <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Механику повторных визитов и возврата после пропуска</div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                                <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                    <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                                </div>
+                                <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Состояния получения монет и обновления прогресса</div>
+                            </div>
+                            <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                                <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                    <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                                </div>
+                                <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">логику завершения игры</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Игра выполняет роль мягкого онбординга: без перегруженных <br/>инструкций, с наглядным прогрессом и понятной мотивацией</div>
+                        <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Несмотря на сложную механику, интерфейс остался интуитивно понятным: пользователь всегда понимал, где он находится и что произойдёт дальше.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">результат</div>
+                <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">проект в активной фазе реализации.</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Концепт полностью проработан: 20+ экранов, UI-кит, user flow.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Механика готова к разработке — все состояния и переходы описаны.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Проект получил положительный фидбек от команды и заказчика.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Решение помогло встроить продуктовые сценарии в игровой формат без перегруженных инструкций.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Промо-сайт стал связующим звеном между пользователем и продуктом.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">выводы</div>
+                <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Геймификация — это не просто «нарисовать красиво». Это способ заставить пользователя захотеть взаимодействовать с продуктом. И делать это так, чтобы он не устал, не запутался и вернулся.</div>
+            </div>
+        </div>
+        <img style="width: 1200px; height: 660.65px; min-width: 1200px; min-height: 660.65px; border-radius: 100px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/1кейс3картинка.png" alt="Финальный скрин" />
+    </div>
+
+    <!-- ==================== ПРОЕКТ 2: АУДИОСЕРВИС ==================== -->
+    <div id="audio" style="align-self: stretch; padding: 96px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #B7FA44; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                    <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">2</div>
+                </div>
+                <div style="flex: 1 1 0; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">игровой лендинг ко дню защиты детей для крупного аудио сервиса</div>
+            </div>
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">роль:</div>
+                    <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">автор концепции, ведущий дизайнер интерфейса. Отвечала за всю логику взаимодействия, визуал, UI-кит, интеграцию работ иллюстраторов в систему</div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">команда:</div>
+                    <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; line-height: 17.60px; word-wrap: break-word">я, арт-директор, проджект-менеджер, команда графического дизайна, команда разработки</div>
+                </div>
+                <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">сроки:</div>
+                    <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; line-height: 17.60px; word-wrap: break-word">2 месяца</div>
+                </div>
+            </div>
+        </div>
+        
+        <img style="align-self: stretch; height: 428px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/2кейс1картинка.png" alt="Лендинг аудиосервиса" />
+        
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">С нуля разработать игровую механику, которая удержит внимание ребёнка.</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Учесть особенности детской психики (крупные элементы, эмоциональная обратная связь, никаких сложных текстов).</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Вписать обучение в игру так, чтобы родители остались довольны, <br/>а дети — увлечены</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Собрать команду из иллюстраторов, разработчиков и проджекта <br/>в единый процесс.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <img style="align-self: stretch; height: 500px; position: relative; background: linear-gradient(294deg, #EEEEED 0%, rgba(238, 238, 237, 0) 100%); background-blend-mode: normal, multiply" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/2кейс2картинка.png" alt="Игровой процесс" />
+            
+            <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
+                <img style="width: 576px; height: 345px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/2кейс3картинка.png" alt="Детали интерфейса" />
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                    <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Спроектировала полный user flow: от входа до получения награды и повторного прохождения.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Разработала UI-кит, адаптированный под детскую аудиторию (крупные кнопки, яркая обратная связь).</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Интегрировала иллюстрации в интерфейс, сохранив их уникальность, но подчинив общей логике взаимодействия.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="width: 600px; height: 218px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; flex: 1 1 0; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">результат</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Все 40+ экранов приняты клиентом — только юридические правки<br/>(1–2% от объёма).</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Среднее время сессии — на 15% выше, чем у стандартных образовательных игр (по данным аналитики сервиса)</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">до 30% детей проходили игру повторно или возвращались<br/>к пройденным уровням.</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Проект запущен вовремя — уложилась в 2 месяца</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Аудитория — игра доступна 1 000 000+ пользователей</div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">выводы</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Геймификация в образовании — это способ мягко, без страха и скуки донести важные правила. И делать это так, чтобы и дети,<br/>и родители были довольны</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+            <img style="flex: 1 1 0; height: 503.78px; border-radius: 48px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/2кейс4картинка.png" alt="Скрин 1" />
+        </div>
+    </div>
+
+    <!-- ==================== ПРОЕКТ 3: FINTECH ==================== -->
+    <div id="fintech" style="align-self: stretch; padding: 96px; background: #1B1B1B; box-shadow: 0px 0px 25px rgba(34.08, 29.38, 23.63, 0.10); border-radius: 160px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="width: 600px; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <div style="width: 560px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #F3CA41; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                        <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">3</div>
+                    </div>
+                    <div style="flex: 1 1 0; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">cайт для крупного fintech сервиса<br/>(лидер рынка взыскания)</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">роль:</div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">UI/UX-дизайнер в составе команды, проектировала систему внутренних страниц</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">команда:</div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Я в составе команды UI/UX, проджект-менеджер,<br/>команда разработки</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">сроки:</div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">4 месяца</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img style="width: 1200px; height: 669px; border-radius: 64px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/3кейс1картинка.png" alt="Fintech сервис" />
+        
+        <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">контекст</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Громоздкие таблицы, неочевидная навигация, сотни жалоб от пользователей. Разработка новых страниц тормозила — каждый раз рисовали с нуля, не было единой системы компонентов</div>
+                </div>
+            </div>
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
+                <div style="width: 623px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Основной целью было спроектировать и визуально реализовать систему внутренних разделов сайта, сохранив преемственность с главной страницей адаптировав сложный финтех-контент под разные группы пользователей</div>
+            </div>
+        </div>
+        
+        <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+            <img style="width: 576px; height: 457px; position: relative; background: #4CA5A1; border-radius: 64px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/3кейс2картинка.png" alt="Дизайн-система" />
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Навела порядок в данных. Спроектировала иерархию и систему визуальных акцентов для таблиц, карточек и фильтров. Пользователи перестали путаться в суммах, статусах и дедлайнах. Я полностью переработала отображение сложного функционала и адаптировала его, обеспечив 100% доступность</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Собрала дизайн-систему. UI-кит из повторяющихся компонентов (кнопки, карточки, статусы, модальные окна) с полным набором состояний. В Figma — auto layout и переменные, изменения применяются ко всем экранам автоматически.</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Ускорила разработку. Передала 6 разделов из 35+ страниц в разработку, провела дизайн-ревью. Разработчики перестали задавать одни и те же вопросы — всё было зафиксировано.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: center; display: flex">
+            <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">результат</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Скорость создания новых экранов выросла на 30–40% — за счёт готовой дизайн-системы.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Количество жалоб на навигацию снизилось на 50% (по данным поддержки за 2 месяца после внедрения).</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Все страницы успешно вышли в продакшен.</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #F3CA41; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Разработчики перестали задавать одни и те же вопросы — экономия времени команды ~5 часов в неделю</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="align-self: stretch; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">выводы</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Дизайн-система — это не скучно, а свободно. Когда она готова, ты перестаёшь рисовать кнопки и начинаешь думать о продукте.</div>
+                    </div>
+                </div>
+            </div>
+            <img style="width: 1200px; height: 503px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/3кейс3картинка.png" alt="Результаты" />
+        </div>
+    </div>
+
+    <!-- ==================== ПРОЕКТ 4: ЯНДЕКС HR ==================== -->
+    <div id="hr" style="align-self: stretch; padding: 96px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="width: 600px; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <div style="width: 560px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #E5B4FA; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                        <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">4</div>
+                    </div>
+                    <div style="flex: 1 1 0; justify-content: center; display: flex; flex-direction: column; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Потоковые задачи для сервиса найма<br/>IT-специалистов Яндекс HR</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">роль:</div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Ведущий дизайнер на потоке задач</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">команда:</div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Я, проджект-менеджеры, команда графического дизайна, команда разработки</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+                        <div style="width: 80px; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 700; line-height: 17.60px; word-wrap: break-word">сроки:</div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">2024 — настоящее время</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img style="align-self: stretch; height: 470px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс1картинка.png" alt="Яндекс HR" />
+        
+        <div style="align-self: stretch; height: 436px; position: relative; justify-content: flex-end; align-items: center; gap: 24px; display: inline-flex">
+            <div style="flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Задача</div>
+                    <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">задачи разного объёма и сложности — от шаблонных лендингов и email рассылок до креативных спецпроектов и новых разделов. Важно было не просто сделать, а сделать быстро, качественно без потери единого стиля</div>
+                </div>
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">что я сделала</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Выстроила процесс. Научилась быстро вникать в задачу, предлагать решение и передавать макеты без лишних итераций</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Создала систему шаблонов и компонентов для повторяющихся задач — это ускорило отрисовку в разы. поддерживала актуальность созданной системы</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">В режиме многозадачности удерживала качество и соблюдала сроки</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 639px; height: 574.66px; left: -39px; top: -71.44px; position: absolute">
+                <img style="width: 639px; height: 574px; left: 0px; top: 35.98px; position: absolute" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс2картинка.png" alt="Декор" />
+            </div>
+        </div>
+        
+        <img style="align-self: stretch; height: 259px; position: relative" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинканастоящая.png" alt="Примеры задач" />
+        
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">результат</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Закрыла 70+ задач за время работы — от мелких гайдов до крупных многостраничников</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Все макеты принимались с первого-второго показа — правки носили точечный характер (уточнения текста, мелкие нюансы).</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Команда знала, что на меня можно положиться — задачи не требовали постоянного контроля</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #E5B4FA; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Вопросы решались без лишних согласований — я брала ответственность на себя в рамках своей компетенции</div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="align-self: stretch; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">выводы</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Потоковые задачи — Это проверка на прочность. Умение быстро переключаться между разными задачами, не теряя качество, — навык, который пригодится в любой продуктовой команде.</div>
+                </div>
+            </div>
+        </div>
+        <img style="width: 1200px; height: 500px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/4кейс3картинка.png" alt="Дополнительные материалы" />
+    </div>
+
+    <!-- ==================== ПРОЕКТ 5: СПОРТИВНОЕ ПРИЛОЖЕНИЕ ==================== -->
+    <div id="sport" style="align-self: stretch; padding: 96px; background: #1B1B1B; border-radius: 160px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="width: 600px; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                    <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #B7FA44; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                        <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">5</div>
+                    </div>
+                    <div style="width: 448px; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Дизайн-концепт спортивного мобильного приложения</div>
+                </div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Рынок фитнес-приложений перенасыщен. согласно открытым источникам Основная проблема — низкое удержание (Day 30 retention в среднем — <br/>5–10%). Пользователи бросают, потому что:</div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Нет быстрой обратной связи</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Прогресс невидим</div>
+                        </div>
+                        <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                            <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                            </div>
+                            <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Награды скучные или отсутствуют</div>
+                        </div>
+                    </div>
+                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Провела мини-опрос (15 человек). Выяснила: 33% бросают из-за невидимого прогресса, 47% — из-за лени и скуки</div>
+                </div>
+            </div>
+        </div>
+        
+        <img style="width: 100%; max-width: 1200px; height: auto;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/5кейс1картинка.png" alt="Концепт приложения" />
+        
+        <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
+            <img style="flex: 1 1 0; height: auto; max-width: 50%;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/5кейс2картинка.png" alt="Интерфейс" />
+            <div style="flex-direction: column; justify-content: center; align-items: flex-start; gap: 24px; display: inline-flex">
+                <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                    <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">некоторые гипотезы</div>
+                    <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 9px; display: flex">
+                            <div style="align-self: stretch; padding: 24px; background: rgba(255, 255, 255, 0.05); border-radius: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 600; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">гипотеза:</div>
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Визуальный прогресс (шкалы, проценты, уровни) повышает частоту тренировок</div>
+                                </div>
+                                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 600; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">что проверяем:</div>
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Пользователи, видящие заполнение шкалы после каждой тренировки, будут заниматься чаще, чем те, кто видит только голые цифры</div>
+                                </div>
+                            </div>
+                            <div style="align-self: stretch; padding: 24px; background: rgba(255, 255, 255, 0.05); border-radius: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 600; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">гипотеза:</div>
+                                    <div style="width: 504px; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Коллекционирование стикеров/статусов повышает удержание на 7/30 день</div>
+                                </div>
+                                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 600; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">что проверяем:</div>
+                                    <div style="align-self: stretch; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">если добавить геймификацию — уровни, ачивки, видимый прогресс, награды за маленькие шаги, — пользователь (и я в том числе) будет возвращаться в приложение не из чувства долга, а из интереса.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">Решение</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Тренировка → Достижение → Открытие стикера/статуса → Украшение профиля → Желание продолжить</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Шкала заполнения после каждой тренировки</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Процент выполнения недельной нормы</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Уровни (1–30) с наградами на каждом</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Анимация + звук после каждой тренировки</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">30+ стикеров и статусов с возможностью покупки</div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 600px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div style="width: 643px; color: white; font-size: 24px; font-family: Golos Text; font-weight: 700; text-transform: lowercase; line-height: 26.40px; word-wrap: break-word">результат</div>
+                <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Концепт полностью проработан: user flow, 20+ экранов, UI-кит</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Механика готова к A/B тестированию — все гипотезы формализованы</div>
+                    </div>
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                        <div style="padding-top: 6px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                            <div style="width: 6px; height: 6px; background: #B7FA44; border-radius: 100px"></div>
+                        </div>
+                        <div style="flex: 1 1 0; color: white; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Проект позволяет отработать сложные техники визуализации данных и геймификации</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img style="width: 100%; max-width: 1200px; height: auto;" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/5кейс3картинка.png" alt="Финальный концепт" />
+    </div>
+
+    <!-- ==================== ТВОРЧЕСТВО И ХОББИ ==================== -->
+    <div id="hobby" style="align-self: stretch; padding: 96px; flex-direction: column; justify-content: center; align-items: center; gap: 64px; display: flex">
+        <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+            <div style="width: 600px; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+                <div style="width: 560px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                    <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                        <div style="width: 52px; height: 52px; padding-top: 8px; padding-bottom: 10px; padding-left: 16px; padding-right: 16px; background: #F3CA41; border-radius: 16px; justify-content: center; align-items: center; gap: 10px; display: flex">
+                            <div style="color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">6</div>
+                        </div>
+                        <div style="flex: 1 1 0; justify-content: center; display: flex; flex-direction: column; color: #1B1B1B; font-size: 24px; font-family: Golos Text; font-weight: 700; line-height: 26.40px; word-wrap: break-word">творчество и хобби</div>
+                    </div>
+                    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                        <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Параллельно с интерфейсами в свободное время я рисую для отдыха и своего удовольствия. Это помогает сохранять work-life баланс, искать неочевидные решения и держать взгляд незамыленным</div>
+                        <div style="align-self: stretch; color: #1B1B1B; font-size: 16px; font-family: Golos Text; font-weight: 400; text-transform: lowercase; line-height: 17.60px; word-wrap: break-word">Рисование помогает прокачивать вещи, которые потом переходят в интерфейсы: композицию, цвета, свет и тень, насмотренность. Для меня часто лучший способ найти вдохновение это взять карандаш и поскетчить какую‑нибудь ерунду</div>
+                    </div>
+                </div>
+            </div>
+            
+            <img style="width: 100%; max-width: 1200px; height: auto; border-radius: 40px" src="https://raw.githubusercontent.com/aliceashihmina-commits/port/main/6кейс.png" alt="Творчество и хобби" />
+        </div>
+    </div>
+
+</div>
+
+<!-- ==================== НАВИГАЦИЯ (FIXED) ==================== -->
+<div style="width: 100%; position: fixed; bottom: 16px; left: 0; padding-left: 24px; padding-right: 24px; box-sizing: border-box; z-index: 100; pointer-events: none;">
+    <div style="max-width: 1440px; margin: 0 auto; width: 100%; pointer-events: auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            
+            <!-- Меню фильтрации / Якоря -->
+            <div style="padding: 8px; background: #F2F2F2; box-shadow: 0px 0px 25px rgba(34, 35, 36, 0.10); border-radius: 40px; display: flex; justify-content: center; align-items: center; backdrop-filter: blur(10px);">
+                <a href="#hero" class="nav-tab" data-section="hero" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 40px; padding-right: 40px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">я</div>
+                </a>
+                <a href="#promo" class="nav-tab" data-section="promo" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">вовлечение</div>
+                </a>
+                <a href="#audio" class="nav-tab" data-section="audio" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">игра</div>
+                </a>
+                <a href="#fintech" class="nav-tab" data-section="fintech" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">система</div>
+                </a>
+                <a href="#hr" class="nav-tab" data-section="hr" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">надёжность</div>
+                </a>
+                <a href="#sport" class="nav-tab" data-section="sport" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">пет-проект</div>
+                </a>
+                <a href="#hobby" class="nav-tab" data-section="hobby" style="text-decoration: none; padding-top: 8px; padding-bottom: 10px; padding-left: 24px; padding-right: 24px; justify-content: center; align-items: center; gap: 10px; display: flex;">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 400; line-height: 22px;">творчество</div>
+                </a>
+            </div>
+            
+            <!-- CTA Кнопки -->
+            <div style="display: flex; gap: 4px;">
+                <a href="https://t.me/ricogagli" target="_blank" class="cta-button-tg" style="text-decoration: none; height: 56px; padding: 8px 24px; background: #FED42B; border-radius: 100px; display: flex; align-items: center; box-shadow: 0px 0px 25px rgba(34, 35, 36, 0.10);">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 700; line-height: 22px;">написать мне</div>
+                </a>
+                <a href="https://stavropol.hh.ru/resume/8632c979ff102269230039ed1f78677766434a" target="_blank" class="cta-button-hh" style="text-decoration: none; height: 56px; padding: 8px 24px; background: #B7FA44; border-radius: 100px; display: flex; align-items: center; box-shadow: 0px 0px 25px rgba(34, 35, 36, 0.10);">
+                    <div style="text-align: center; color: #1B1B1B; font-size: 20px; font-family: Golos Text; font-weight: 700; line-height: 22px;">резюме на hh</div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ==================== СКРИПТ ДЛЯ АКТИВНЫХ ТАБОВ ПРИ СКРОЛЛЕ ==================== -->
+<script>
+(function() {
+    'use strict';
+    
+    // Получаем все секции и табы
+    const sections = [
+        { id: 'hero', tab: document.querySelector('[data-section="hero"]') },
+        { id: 'promo', tab: document.querySelector('[data-section="promo"]') },
+        { id: 'audio', tab: document.querySelector('[data-section="audio"]') },
+        { id: 'fintech', tab: document.querySelector('[data-section="fintech"]') },
+        { id: 'hr', tab: document.querySelector('[data-section="hr"]') },
+        { id: 'sport', tab: document.querySelector('[data-section="sport"]') },
+        { id: 'hobby', tab: document.querySelector('[data-section="hobby"]') }
+    ].filter(s => s.tab !== null); // Фильтруем на случай, если таб не найден
+    
+    // Функция для удаления активного класса со всех табов
+    function removeActiveClasses() {
+        sections.forEach(section => {
+            if (section.tab) {
+                section.tab.classList.remove('active');
+            }
+        });
+    }
+    
+    // Функция для определения видимой секции
+    function updateActiveTab() {
+        const scrollPosition = window.scrollY + 200; // Небольшой оффсет для точности
+        
+        let activeSection = null;
+        
+        // Ищем секцию, которая сейчас видна
+        for (let i = sections.length - 1; i >= 0; i--) {
+            const section = sections[i];
+            const element = document.getElementById(section.id);
+            
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                const absoluteTop = rect.top + window.scrollY;
+                
+                if (absoluteTop <= scrollPosition) {
+                    activeSection = section;
+                    break;
+                }
+            }
+        }
+        
+        // Если нашли активную секцию — подсвечиваем её таб
+        if (activeSection) {
+            removeActiveClasses();
+            if (activeSection.tab) {
+                activeSection.tab.classList.add('active');
+            }
+        }
+    }
+    
+    // Обработчик скролла с троттлингом
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                updateActiveTab();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+    
+    // Запускаем при загрузке
+    updateActiveTab();
+    
+    // Добавляем плавный скролл при клике на таб
+    sections.forEach(section => {
+        if (section.tab) {
+            section.tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        }
+    });
+    
+})();
+</script>
+
+</body>
+</html>
